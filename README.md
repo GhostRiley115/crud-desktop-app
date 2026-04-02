@@ -48,5 +48,5 @@ git clone https://github.com/GhostRiley115/crud-desktop-app.git
 3. Build and run the application
 
 ## Preview
-![Login Screen](./assets/print-login.png)
-![Login Screen](./assets/print-dashboard.png)
+![Login Screen](./TechStart.Solution/assets/print-login.png)
+![Login Screen](./TechStart.Solution/assets/print-dashboard.png)
