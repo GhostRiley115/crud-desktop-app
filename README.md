@@ -1,52 +1,57 @@
-# Desktop Management System (C#)
+![TechStart Desktop — apresentação do projeto](assets/readme/cover.svg)
 
-Desktop application developed using C# and Windows Forms to manage products and events through a complete CRUD system.
+<div align="center">
 
-This project simulates an internal management system for a technology/events company.
+# TechStart · sistema desktop
 
-## Technologies
+**Cadastro e consulta de eventos e produtos em uma interface Windows Forms.**
 
-- C#  
-- Windows Forms (.NET)  
+`C#` · `.NET Framework 4.7.2` · `Windows Forms` · `Arquivos locais`
 
-## Features
+[Landing page ↗](https://ghostriley115.github.io/techstart-landing-page/) · [Código da apresentação](https://github.com/GhostRiley115/techstart-landing-page)
 
-- User authentication (login system)  
-- Product management (Create, Read, Update, Delete)  
-- Event management (Create, Read, Update, Delete)  
-- Data editing and removal  
-- Simple and functional user interface  
+</div>
 
-## Project Context
+## A proposta
 
-This project is part of a larger system that simulates a real-world company environment.
+A TechStart é uma startup fictícia usada como contexto para desenvolver uma aplicação desktop acadêmica. O sistema transforma operações de cadastro, consulta, edição e exclusão em telas de uso direto, exercitando eventos de interface, validações e persistência em arquivos.
 
-The public-facing side is a landing page:  
-https://ghostriley115.github.io/techstart-landing-page/
+## Por dentro da aplicação
 
-This desktop application represents the internal system used to manage business data such as products and events.
+| Login | Painel principal |
+| :---: | :---: |
+| ![Tela de login](TechStart.Solution/assets/print-login.png) | ![Painel do sistema desktop](TechStart.Solution/assets/print-dashboard.png) |
 
-Together, these projects simulate a complete workflow:
-- Website for presentation and user engagement  
-- Desktop system for internal management  
+## Funcionalidades
 
-## Data Persistence
+- Fluxos de login e cadastro de usuários.
+- Cadastro, consulta, edição e exclusão de eventos.
+- Cadastro, consulta, edição e exclusão de produtos.
+- Persistência local em arquivos de texto.
+- Navegação entre formulários a partir da tela principal.
 
-Data is stored locally using file-based storage (academic approach).
+## Escolhas técnicas
 
-## Objective
+| Tecnologia | Papel no projeto |
+| :--- | :--- |
+| C# | Lógica e eventos da aplicação |
+| Windows Forms | Telas e componentes de interface |
+| .NET Framework 4.7.2 | Plataforma de execução para Windows |
+| Arquivos `.txt` | Armazenamento local dos cadastros |
 
-To practice desktop application development, user interface design, and CRUD operations, simulating a real business management system.
+Os dados ficam na pasta `dados`, junto ao executável. O projeto é uma demonstração acadêmica com armazenamento local; não contém uma camada de banco de dados ou serviço remoto de autenticação.
 
-## How to Run
+## Executar no Windows
 
-1. Clone the repository:
-git clone https://github.com/GhostRiley115/crud-desktop-app.git
+1. Instale o Visual Studio com a carga **Desenvolvimento para desktop com .NET** e o targeting pack do **.NET Framework 4.7.2**.
+2. Clone este repositório.
+3. Abra `TechStart.Solution/TechStart.Solution.slnx`. Se sua versão não reconhecer `.slnx`, abra `TechStart.Solution/TechStart.App/TechStart.App.csproj`.
+4. Defina `TechStart.App` como projeto de inicialização, compile e execute.
 
-2. Open the project in Visual Studio
+O login procura `dados/usuarios.txt` na pasta de saída. O arquivo de usuários incluído no projeto está configurado para cópia na compilação. Eventos e produtos usam `eventos.txt` e `produtos.txt`; caso vá importar dados de exemplo, observe que o arquivo de produtos versionado possui o nome `produtos.txt.txt` e precisa corresponder ao nome esperado pela aplicação.
 
-3. Build and run the application
+## Explore também
 
-## Preview
-![Login Screen](./TechStart.Solution/assets/print-login.png)
-![Login Screen](./TechStart.Solution/assets/print-dashboard.png)
+A [landing page TechStart](https://github.com/GhostRiley115/techstart-landing-page) apresenta a identidade da startup e seus protótipos. Este repositório contém a aplicação desktop.
+
+Projeto de estudo presente no [portfólio de Clayton Brito](https://github.com/GhostRiley115).
